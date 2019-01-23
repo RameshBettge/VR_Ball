@@ -27,12 +27,12 @@ public class BallManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.JoystickButton8) || Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.JoystickButton16) || Input.GetKeyDown(KeyCode.S))
         {
             SpawnBall();
         }
 
-        if (Input.GetKeyDown(KeyCode.JoystickButton2))
+        if (Input.GetKeyDown(KeyCode.JoystickButton8))
         {
             ResetGame();
         }

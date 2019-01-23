@@ -60,17 +60,13 @@ public class DeformTool : MonoBehaviour
 
         // TODO: remove everything in update. Deforming should only be called from a hand script
 
-        if(Input.GetKeyDown(KeyCode.JoystickButton9))
+        if(Input.GetKeyDown(KeyCode.JoystickButton17))
         {
             bool upwards = (deformDirection > 0) ? false : true;
             SetDeformDirection(upwards);
         }
 
-        if (Input.GetKeyDown(KeyCode.JoystickButton15))
-        {
-            Debug.LogWarning("Trigger pressed!");
-        }
-        if (Input.GetKeyDown(KeyCode.JoystickButton15) || ((Time.time - debugTick) > 0.5f))
+        if (Input.GetKeyUp(KeyCode.JoystickButton15) || ((Time.time - debugTick) > 0.5f))
         {
             debugTick = Time.time;
 
